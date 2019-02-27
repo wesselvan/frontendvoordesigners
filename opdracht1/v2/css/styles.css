@@ -1,0 +1,543 @@
+body
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+}
+
+
+body>footer {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    font-size: 1em;
+    color:#d60000;
+    vertical-align: middle;
+}
+
+
+
+/*boven navigatie*/
+
+nav
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 1em;
+    height: 4em;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(20, 20, 20);
+    top: 0px;
+}
+
+
+
+nav ul
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    color: white;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+    font-family: helvetica, sans-serif;
+    line-height: 2em;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+
+
+
+nav ul li:hover
+{
+    color: whitesmoke;
+}
+
+nav a:hover
+{
+    color: whitesmoke;
+}
+
+
+nav ul li:focus
+{
+    color: whitesmoke;
+}
+
+nav a:focus
+{
+    color: whitesmoke;
+}
+
+
+nav ul li i
+{
+    font-size: 1.5em;
+}
+
+nav ul li a
+{
+    color: white;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: helvetica;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+
+
+/*banner*/
+
+.banner img {
+width:100%;
+}
+
+
+
+/*Videos*/
+
+section
+{
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+padding: 0px 2em;
+}
+
+
+.scrollcontainer {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 2em;
+     &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+
+section h1
+{
+    color: white;;
+    font-weight: 100;
+    font-size: 1.5em;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+section h2
+{
+    color: white;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/*
+
+article
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin-right: 1em;
+    border-bottom: 5px solid #b91b1b;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    min-width: 15em;
+}
+
+
+article footer
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    -ms-flex-align: end;
+    margin-bottom: 5px;
+    width: 100%;
+
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+}
+
+article footer a
+{
+    margin-right: auto;
+    margin-left: 5px;
+    color: #b91b1b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: helvetica, sans-serif;
+}
+
+
+
+article img
+{
+    width: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+voeg toe knop
+
+article button:first-of-type
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+    border: none;
+    background-color: transparent;
+    color: #b91b1b;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+article footer button i
+{
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+
+
+article button:focus
+{
+    background-color: rgba(0, 0, 0, .22);
+    color: #b91b1b;
+    -webkit-transition: 500ms;
+            transition: 500ms;
+}
+
+article button:hover
+{
+    background-color: rgba(0, 0, 0, .22), black;
+    color: #b91b1b;
+    -webkit-transition: 500ms;
+            transition: 500ms;
+}
+
+
+
+article p
+{
+    margin: 0;
+    padding: 0 5px;
+    color: #b91b1b;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: helvetica, sans-serif;
+}
+
+article p:first-of-type
+{
+    text-transform: uppercase;
+}
+
+article p:last-of-type
+{
+    border-bottom: 2px solid #d60000;
+    text-align: right;
+}
+
+
+article button:hover
+{
+    color: #d60000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+article button:focus
+{
+    color: #d60000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+article a
+{
+    text-decoration: none;
+}
+
+article h3
+{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: helvetica, sans-serif;
+
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+*/
+
+
+/*micro interacties*/
+
+#notification
+{
+    display: none;
+}
+
+
+#notification.added
+{
+    position: absolute;
+    display: block;
+    width: 2em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #d60000;
+    color: white;
+    font-weight: 300;
+    font-family: helvetica, sans-serif;
+}
+
+
+
+
+/*Mijn lijst*/
+
+.mijn_lijst section{
+    display: block;
+}
+
+.mijn_lijst h1
+{
+    width: 100%;
+}
+
+.mijn_lijst button[name='allesdownloaden']
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #b91b1b;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.mijn_lijst button[name='allesdownloaden'] i
+{
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.mijn_lijst section article
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin-bottom: 3em;
+    border: solid 1px #b91b1b;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+.mijn_lijst section article img
+{
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+.mijn_lijst section article h3
+{
+    margin-left: 1.5rem;
+}
+
+.mijn_lijst section article p
+{
+    margin-left: 1.5rem;
+    border: none;
+}
+
+.mijn_lijst section article button
+{
+    position: relative;
+    top: -0.5em;
+    margin-right: 5px;
+    font-size: 2em;
+    color: green;
+}
+
+
+
+
+/*THUMNAILS*/
+
+article {
+    position: relative;
+    margin-right: 1em;
+    height: 100%;
+}
+
+
+
+article div a{
+opacity: 0;
+position: absolute;
+top: 0px;
+width: 100%;
+margin: 0px;
+padding: 0px;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+text-decoration: none;
+}
+
+article div a h3{
+    width: 100%;
+    padding: 0px;
+    color: white;
+    font-size: 2em;
+    font-family: helvetica, sans-serif;
+    margin-top: 1.5em;
+    margin-bottom: 0px;
+    margin-left: 0.5em;
+}
+
+article div a p {
+    padding: 0em 1em;;
+    color: white;
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    align-self: center;
+}
+
+article div a p:nth-of-type(1){
+    margin-right: auto;
+    background-color: #d60000;
+    margin-left: 1em;
+}
+
+
+article div a p:nth-of-type(2){
+    margin-left: auto;
+}
+
+article div button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: transparent;
+    border: none;
+
+}
+
+
+article div button i{
+    color: #d60000;
+    font-size: 3em;
+    border: none;
+}
+
+
+
+
+/*hover*/
+
+
+article div a:hover{
+opacity: 1;
+transition: ease-in 1s;
+background-color: rgba(0, 0, 0, 0.75);
+}
+
+article:hover {
+width: 120%;
+}
+
+
+
