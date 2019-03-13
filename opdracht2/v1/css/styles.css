@@ -1,0 +1,91 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body section {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #16161d;
+}
+
+footer{
+  background-color: white;
+
+}
+
+
+
+.carrousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+
+}
+
+.carrousel h1{
+    margin: 0px;
+    font-size: 1.5em;
+    padding-top: 1em;;
+    height: 2em;
+    font-family: fantasy;
+    background-color:rgba(0, 137, 255, 0.51);
+    text-align: center;
+    color: white;
+}
+
+.carrousel div{
+    position: relative;
+    width: 50%;
+    height: 50%:
+}
+
+.carrousel div img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.carrousel div.left {
+    transform:translateX(-200vw);
+    z-index: 0;
+}
+
+.carrousel div.right {
+    transform:translateX(200vw);
+    z-index: 0;
+}
+
+.carrousel div.active {
+    z-index: 10;
+    position: absolute;
+}
+
+div > button{
+    background-color: rgba(197, 206, 255, 0.36);
+    border: none;
+    height: 100%;
+    color: white;
+    width: 20em;
+}
+
+button:first-of-type{
+    position: absolute;
+    left: 0px;
+    z-index: 100;
+}
+
+button:last-child {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
