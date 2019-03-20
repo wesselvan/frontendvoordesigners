@@ -1,0 +1,98 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body section {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #1d1d1d;
+}
+
+footer{
+  background-color: white;
+
+}
+
+
+
+.carrousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+
+}
+
+.carrousel h1{
+    margin: 0px;
+    font-size: 1.5em;
+    padding-top: 1em;;
+    height: 2em;
+    font-family: fantasy;
+    background-color:rgb(24, 37, 106);
+    text-align: center;
+    color: white;
+}
+
+.carrousel div{
+   position: absolute;
+   width: 50%;
+
+}
+
+.carrousel div img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.carrousel div.left {
+    transform:translateX(-100vw);
+    z-index: 0;
+    opacity: 0;
+    transition: 0.1 ease-out;
+}
+
+.carrousel div.right {
+    transform:translateX(100vw);
+    z-index: 0;
+    opacity: 0;
+    transition: 0.1 ease-out;
+}
+
+.carrousel div.active {
+    z-index: 10;
+    position: absolute;
+    opacity: 1;
+    transition: 0.4s ease-in;
+}
+
+
+div > button{
+    background-color: rgb(24, 37, 106);
+    border: none;
+    height: 100%;
+    color: white;
+    width: 20em;
+}
+
+button:first-of-type{
+    position: absolute;
+    left: 0px;
+    z-index: 100;
+}
+
+button:last-child {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
